@@ -1,57 +1,41 @@
-import java.lang.*;
-import java.util.*;
+import java.io.*;
+import java.util.Scanner;
 
-public class Calculator
+public class Main
 {
-    private int solution;
-    private int x;
-    private int y;
-    private char operators;
+public static void main(String[] args)
+{
+Scanner input=new Scanner(System.in);
+Scanner text=new Scanner(System.in);
 
-    public Calculator()
-    {
-        solution = 0;
-        Scanner operators = new Scanner(System.in);
-        Scanner operands = new Scanner(System.in);
-    }
+String opr;
+int x;
+int y;
+int sum;
 
-    public int addition(int x, int y)
-    {
-       return x + y;
-    }
-    public int subtraction(int x, int y)
-    {
-       return x - y;
-    }
+System.out.println("This is a simple calculator program.");
+System.out.println("Input first number: ");
+x = input.nextInt();
 
-    public int division(int x, int y)
-    {
-       solution = x / y;
-       return solution;
-    }
-    public void main (String[] args)
-    {
-      System.out.println("What operation? ('+', '-', '*', '/')"); 
+System.out.println("Input second number: ");
+y = input.nextInt();
 
-      System.out.println("Insert 2 numbers to be subtracted");
-       System.out.println("operand 1: ");
-       x = operands;
-       System.out.println("operand 2: ");
-       y = operands.next();
-      switch(operators)
-      {
-          case('+'):
-            addition(operands);
-            operands.next();
-            break;
-          case('-'):
-            subtraction(operands);
-            operands.next();
-            break;
-          case('/'):
-            division(operands);
-            operands.next();
-            break;
-       }
-  }
+System.out.println("Choose an operation (+,-,*,/): ");
+opr = text.nextLine();
+System.out.print(opr);
+if(opr.equals("+")){
+    sum = x + y;
+    System.out.println("Result is: " + sum);
+}else if(opr.equals("-")){
+    sum = x - y;
+    System.out.println("Result is: " + sum);
+}else if(opr.equals("*")){
+    sum = x * y;
+    System.out.println("Result is: " + sum);
+}else if(opr.equals("/")){
+    sum = x / y;
+    System.out.println("Result is: " + sum);
+}
+
+}
 }
