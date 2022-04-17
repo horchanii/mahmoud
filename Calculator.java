@@ -25,16 +25,16 @@ opr = text.nextLine();
 System.out.print(opr);
 if(opr.equals("+")){
     sum = x + y;
-    System.out.println("Result is: " + sum);
+    System.out.println("Resultat is: " + sum);
 }else if(opr.equals("-")){
     sum = x - y;
-    System.out.println("Result is: " + sum);
+    System.out.println("Resultat is: " + sum);
 }else if(opr.equals("*")){
     sum = x * y;
-    System.out.println("Result is: " + sum);
+    System.out.println("Resultat is: " + sum);
 }else if(opr.equals("/")){
     sum = x / y;
-    System.out.println("Result is: " + sum);
+    System.out.println("Resultat is: " + sum);
 }
 
 }
