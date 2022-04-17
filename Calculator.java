@@ -35,6 +35,11 @@ if(opr.equals("+")){
 }else if(opr.equals("/")){
     sum = x / y;
     System.out.println("Resultat is: " + sum);
+
+}
+else {
+	    System.out.println("Resultat is: " + 0);
+
 }
 
 }
